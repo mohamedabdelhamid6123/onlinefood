@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F&D Shop - Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+</head>
+
+<body>
+    <section class="top-txt">
+        <div class="head container">
+            <div class="head-txt">
+                <h1>Restaurant</h1>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <input type="checkbox" id="checkbox" />
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items" id="navLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="payment.html">PAYMENT</a></li>
+                <li><a href="cart.html">CART</a></li>
+                <li id="loginLink"><a href="login.html" class="active">LOGIN</a></li>
+                <li id="signupLink"><a href="signup.html">SIGNUP</a></li>
+                <li id="logoutLink" style="display:none;"><a href="#" onclick="logout()">LOGOUT</a></li>
+            </ul>
+            <h3>F&D Online Restaurant</h3>
+        </div>
+
+    </nav>
+
+    <!-- ✅ Log In Form -->
+    <section class="auth-container">
+        <div class="auth-box">
+            <div class="auth-tabs">
+                <a href="signup.html" class="tab">Sign up</a>
+                <a href="login.html" class="tab active">Log in</a>
+            </div>
+
+            <h2>Welcome <strong>Back!</strong></h2>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="email" id="loginEmail" placeholder="E-mail" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                </div>
+                <a href="#" class="forgot">Forgot Password?</a>
+                <button type="submit" class="btn">Log in</button>
+            </form>
+
+            <p class="switch-auth">
+                Don’t have an account? <a href="signup.html">Sign Up</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container container">
+            <div class="content_1">
+                <h4>F&D Online Restaurant</h4>
+                <p>PAYMENT METHODS</p>
+                <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" />
+            </div>
+            <div class="content_2">
+                <h4>SHOPPING</h4>
+                <a href="./products.html">Drinks</a>
+                <a href="./products.html">Fried Chicken, Pizza, Burgers</a>
+                <a href="./products.html">Donuts, Bakeries, pancakes, Waffles</a>
+            </div>
+            <div class="content_3">
+                <h4>Contact info</h4>
+                <a href="./contact.html"><i class="fa-solid fa-file-signature" style="color: #ffffff"></i> Contact Form</a>
+                <a href="#"><i class="fa-solid fa-envelope" style="color: #ffffff"></i> email</a>
+                <a href="www.linkedin.com/in/mhmd-abdelhamid" target="_blank">
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff"></i> linkedin</a>
+            </div>
+            <div class="content_4">
+                <h4>NEWSLETTER</h4>
+                <p>Be the first to know about new<br />Products!</p>
+                <div class="f-mail">
+                    <input type="email" placeholder="Your Email" />
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <hr />
+            </div>
+        </div>
+        <div class="f-design">
+            <div class="f-design-txt container">
+                <p>Design and Code by Mohamed Abd ElHamid Mahmoud Ali Awad </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
